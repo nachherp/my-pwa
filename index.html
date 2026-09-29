@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="app">
+    <header class="app-header">
+      <div class="title-wrap">
+        <h1>Notas</h1>
+        <span id="network-status" class="status online">En línea</span>
+      </div>
+      <button id="btn-install" class="btn-install" style="display: none;">Instalar app</button>
+    </header>
+
+    <form id="note-form" class="note-form">
+      <input type="text" id="note-input" placeholder="Escribe una nota..." autocomplete="off" required>
+      <button type="submit">Añadir</button>
+    </form>
+
+    <ul id="notes-list" class="notes-list"></ul>
+
+    <footer class="app-footer">
+      <span id="sw-status">Service Worker: Inactivo</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
